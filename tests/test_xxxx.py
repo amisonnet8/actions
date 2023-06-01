@@ -4,3 +4,7 @@ def test_xxxx1():
 
 def test_xxxx2():
     assert {1, 2, 3} == {1, 2, 3}
+
+
+def test_xxxx3():
+    assert [1, 2, 3] == [1, 2, 3]
