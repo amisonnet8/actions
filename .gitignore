@@ -1,0 +1,7 @@
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.venv/
+.nox/
+*.py[cod]
+poetry.lock
