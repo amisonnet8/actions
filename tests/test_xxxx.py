@@ -8,3 +8,7 @@ def test_xxxx2():
 
 def test_xxxx3():
     assert [1, 2, 3] == [1, 2, 3]
+
+
+def test_xxxx4():
+    assert 20 == 20

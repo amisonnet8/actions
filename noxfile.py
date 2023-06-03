@@ -9,5 +9,17 @@ def tests(session):
 
 @nox.session
 def lint(session):
+    session.install("black")
     session.install("ruff")
-    session.run("ruff", ".")
+    session.install("mypy")
+    session.run("black", "--check", ".")
+    session.run("ruff", "check", ".")
+    session.run("mypy", ".")
+
+
+@nox.session
+def format(session):
+    session.install("black")
+    session.install("ruff")
+    session.run("black", ".")
+    session.run("ruff", "--fix", ".")

@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: lint_and_tests
+        name: lint_and_tests
+        pass_filenames: false
+        entry: nox -s format lint tests
+        language: system
