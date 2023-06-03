@@ -7,7 +7,7 @@ repos:
         entry: nox -s lint
         language: system
       - id: tests
-        name: ests
+        name: tests
         pass_filenames: false
         entry: nox -s tests
         language: system
